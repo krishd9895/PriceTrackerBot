@@ -14,6 +14,7 @@ from scraper import scrape
 from scheduler import check_prices
 from helpers import fetch_all_products, add_new_product, fetch_one_product, delete_one
 from regex_patterns import flipkart_url_patterns, amazon_url_patterns, all_url_patterns
+from webserver import keep_alive
 
 load_dotenv()
 
@@ -177,3 +178,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+keep_alive()
